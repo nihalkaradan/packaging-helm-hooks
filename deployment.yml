@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-docker-demo
+  labels:
+    app: nodejs-docker-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodejs-docker-demo
+  template:
+    metadata:
+      labels:
+        app: nodejs-docker-demo
+    spec:
+      containers:
+      - name: nodejs-docker-demo
+        image: nihalkaradan/nodejs-docker-demo
+        ports:
+        - containerPort: 8080
