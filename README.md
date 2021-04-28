@@ -1,5 +1,5 @@
 # nodejs-docker-demo
-# Containerising for demo
+## Containerising for demo
 Container Registry : dockerhub "nihalkaradan/nodejs-docker-demo:1.0"
 
 1. Helm based installation
