@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-docker-demo",
+  "name": "node-helm-preinstall",
   "version": "1.0.0",
   "description": "Containerising for demo",
   "main": "index.js",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/nihalkaradan/nodejs-docker-demo#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.12.5"
+    "mongoose": "^5.12.5",
+    "mysql": "^2.18.1"
   }
 }
