@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-   name: preinstall-hook
+   name: postinstall-hook
    annotations:
        "helm.sh/hook": "post-install"
        "helm.sh/hook-delete-policy": "hook-succeeded"
 spec:
   containers:
   - name: pre-install-container
-    image: nihalkaradan/helm-preinstall
+    image: nihalkaradan/helm-postinstall
     env:
     - name: name
       value: ToolX
