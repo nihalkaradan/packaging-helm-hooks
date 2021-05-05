@@ -24,6 +24,13 @@ helm install my-docker-chart nodejs-docker-helmchart/ --values nodejs-docker-hel
 ```
 4. verify helm-postinstall hook
 ```bash
+kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
+use mydb;
+select * from shop;
+```
+5. Verify installation
+
+```bash
 kubectl get pods
 kubectl get svc 
 kubectl get ingress
