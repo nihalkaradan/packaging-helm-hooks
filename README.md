@@ -35,3 +35,4 @@ kubectl get pods
 kubectl get svc 
 kubectl get ingress
 ```
+6. next steps refactor
